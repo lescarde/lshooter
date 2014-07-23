@@ -48,6 +48,26 @@
         console.log("fondo cargado");
         console.debug(this.fondo);
 
+
+        var dataNave = {
+            images: [this.cargador[rutaNave]],
+            frames: {
+                width: 103,
+                height: 90
+            },
+            animations: {
+                run: [0, 19],
+                fire: [19, 47, "fire"],
+                boom: [48, 71, "boom"]
+            }
+
+        };
+        var spriteSheet = new createjs.SpriteSheet(dataNave);
+        this.nave = new Nave(spriteSheet);
+        this.stage.addChild(this.nave);
+
+        /*
+         */
         var self = this;
 
         createjs.Ticker.setFPS(30);
@@ -55,9 +75,6 @@
         console.debug(createjs.Ticker);
         createjs.Ticker.addEventListener("tick", function(e) {
             self.Tick();
-
-            console.log("self cargado");
-            console.debug(self);
         });
     }
 
