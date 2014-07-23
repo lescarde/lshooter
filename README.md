@@ -1,3 +1,7 @@
 Juego naves realizado en HTML5, CSS3, Javascript
-Utilizando la libreria JScreate - Manejo de repositorio mediante GitHub
----- Leonardo Sanchez - 2014 ----
+<<<<<<< HEAD
+Utilizando la libreria JScreate, Stylus(Preprocesador CSS), Sublime text(Editor codigo), Brackets(Editor codigo)
+
+=======
+Utilizando la libreria JScreate, Stylus(Preprocesador CSS), Sublime text(Editor codigo), Brackets(Editor codigo)
+
